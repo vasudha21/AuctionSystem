@@ -8,25 +8,34 @@ coordinating interactions between Bidder instances without them directly interac
 ### Components:
 
   Colleague Interface:
+  
     Represents a participant in the auction system.
+    
   Methods:
+  
     placeBid(int amount) — to place a bid.
     receiveBidNotification(String message) — to receive notifications about auction updates.
   Bidder Class:
+  
     Implements Colleague.
     Represents a bidder in the system.
   Contains:
+  
     name: Name of the bidder.
     auctionMediator: Instance of AuctionMediator to communicate with the auction.
     Overrides placeBid and receiveBidNotification.
   AuctionMediator Interface:
+  
     Central mediator for managing communication between bidders.
   Methods:
+  
     addBidder(Bidder bidder) — to add bidders to the auction.
     placeBid(Bidder bidder, int bidAmount) — to place a bid and notify all bidders.
   Auction Class:
+  
     Implements AuctionMediator.
   Contains:
+  
     List of bidders.
     Tracks the highest bid and bidder.
     Overrides methods to manage bidders and bids.

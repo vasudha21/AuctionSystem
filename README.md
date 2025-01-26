@@ -4,8 +4,8 @@ Here's a detailed implementation of an online auction/bidding system using the M
 This design ensures that the AuctionMediator acts as a central hub, 
 coordinating interactions between Bidder instances without them directly interacting with each other.
 
-##Low-Level Design
-###Components:
+## Low-Level Design
+### Components:
 
   Colleague Interface:
     Represents a participant in the auction system.
@@ -32,5 +32,5 @@ coordinating interactions between Bidder instances without them directly interac
     Overrides methods to manage bidders and bids.
 
 
-###Improvement:
+### Improvement:
   what if auction can be of different strategy: eg time based auction, value based auction, All-In Strategy etc.
